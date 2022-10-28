@@ -4,32 +4,24 @@
   background-color: var(--secondary-bgn-color);
 }
 
+.footer__container {
+  display: flex;
+}
 
 
-.adress-list {
+// ---------ADRESS-------------
+.adress__list {
   display: inline-flex;
   flex-direction: column;
   gap: 9px;
 }
 
-.adress-link {
+.adress__link {
   font-style: normal;
   font-size: var(--main-font-size);
   line-height: var(--second-line-height);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-
-.footer-contact {
-  text-decoration: none;
-  font-style: normal;
-  font-size: var(--main-font-size);
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: var(--second-line-height);
-}
-
-.secondary {
   @include transition (color);
 
   &:hover,
@@ -38,18 +30,28 @@
   }
 }
 
-.footer-container {
-  display: flex;
+.ardess__link--grey {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  @include transition (color);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
 }
-.footer-social {
+
+// ---------SOCIALS--------------
+.socials__container {
   margin-left: 70px;
 }
-.footer-social-links {
+
+.socials__list {
   display: inline-flex;
   gap: 10px;
 }
 
-.social-title {
+.socials__title {
   margin-bottom: 20px;
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
@@ -59,7 +61,7 @@
   color: var(--secondary-text-color);
 }
 
-.icon-background {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,16 +77,28 @@
   }
 }
 
-.icon {
+.socials__icon {
   width: 20px;
   height: 20px;
 }
 
-.form-container {
+// ----------------SUBSCRIBE FORM---------------------
+
+.newsletter__container {
   margin-left: auto;
 }
 
-.email-input {
+.newsletter__title {
+  margin-bottom: 20px;
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.newsletter__input {
   min-width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -110,10 +124,3 @@
   }
 }
 
-.icon-send {
-  position: absolute;
-  right: 28px;
-  top: 13px;
-  width: 24px;
-  height: 24px;
-}

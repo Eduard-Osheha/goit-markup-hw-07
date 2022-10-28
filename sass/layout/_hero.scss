@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
 }
 
-.hero-title {
+.hero__title {
   margin: 0px auto 30px auto;
   max-width: 696px;
   font-weight: 900;
@@ -21,7 +21,7 @@
   color: var(--secondary-text-color);
 }
 
-.button-box {
+.hero__button-wrap {
   display: flex;
   justify-content: center;
 }
