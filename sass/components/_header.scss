@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  align-content: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+}
+
+.site-nav,
+.contact__list,
+.site-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__list {
+  gap: 50px;
+}
+
+.site-nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  @include transition (color); @include transition (text-shadow);
+  
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
+
+.contact__list {
+  margin-left: auto;
+  margin-right: 0;
+  gap: 50px;
+}
+
+.contact__item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: 0.02em;
+  color: var(--first-text-color);
+  @include transition (color);
+}
+
+.contact__link {
+  display: inline-flex;
+  align-content: center;
+  @include transition (color);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
+
+.contact__icon-tel,
+.contact__icon-mail {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contact__icon-tel {
+  width: 10px;
+  height: 16px;
+}
+
+.contact__icon-mail {
+  width: 16px;
+  height: 12px;
+}
