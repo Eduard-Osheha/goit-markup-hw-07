@@ -9,7 +9,7 @@
 }
 
 .site-nav,
-.contact__list,
+.contacts,
 .site-nav__list {
   display: flex;
   align-items: center;
@@ -36,13 +36,13 @@
   }
 }
 
-.contact__list {
+.contacts {
   margin-left: auto;
   margin-right: 0;
   gap: 50px;
 }
 
-.contact__item {
+.contacts__item {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -53,7 +53,7 @@
   @include transition (color);
 }
 
-.contact__link {
+.contacts__link {
   display: inline-flex;
    align-items: center;
   @include transition (color);
@@ -64,18 +64,18 @@
   }
 }
 
-.contact__icon-tel,
-.contact__icon-mail {
+.contacts__icon-tel,
+.contacts__icon-mail {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.contact__icon-tel {
+.contacts__icon-tel {
   width: 10px;
   height: 16px;
 }
 
-.contact__icon-mail {
+.contacts__icon-mail {
   width: 16px;
   height: 12px;
 }

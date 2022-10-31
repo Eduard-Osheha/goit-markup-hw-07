@@ -30,7 +30,7 @@
   }
 }
 
-.ardess__link--grey {
+.adress__link--grey {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   @include transition (color);
@@ -41,50 +41,11 @@
   }
 }
 
-// ---------SOCIALS--------------
-.socials__container {
-  margin-left: 70px;
-}
 
-.socials__list {
-  display: inline-flex;
-  gap: 10px;
-}
-
-.socials__title {
-  margin-bottom: 20px;
-  font-weight: var(--main-font-weight);
-  font-size: var(--main-font-size);
-  line-height: var(--main-line-height);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-}
-
-.socials__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--icon-bgn-color);
-  @include transition (background-color);
-  
-  &:hover,
-  &:focus {
-    background-color: var(--hover-color);
-  }
-}
-
-.socials__icon {
-  width: 20px;
-  height: 20px;
-}
 
 // ----------------SUBSCRIBE FORM---------------------
 
-.newsletter__container {
+.newsletter {
   margin-left: auto;
 }
 

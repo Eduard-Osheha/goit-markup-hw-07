@@ -1,9 +1,9 @@
-.preference-list {
+.preference__list {
   display: flex;
   gap: 30px;
 }
 
-.icon-preference-bgn {
+.preference__icon-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,12 +14,12 @@
   margin-bottom: 30px;
 }
 
-.icon-preference {
+.preference__icon {
   width: 70px;
   height: 70px;
 }
 
-.preference-title {
+.preference__title {
   margin-bottom: 10px;
   font-weight: var(--main-font-weight);
   font-size: var(--main-font-size);
@@ -29,9 +29,9 @@
   color: var(--primary-text-color);
 }
 
-.preference-text {
+.preference__text {
   font-size: var(--main-font-size);
-  line-height: 1.5;
+  line-height: var(--second-line-height);
   letter-spacing: 0.03em;
   color: var(--first-text-color);
 }
